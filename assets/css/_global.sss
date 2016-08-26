@@ -1,0 +1,176 @@
+:root
+  --blue: #4F5354
+  --red: #CF6060
+  --green: #77BB8B
+  --sky-start: #D3F7FF
+  --sky-end: #9CD7F9
+
+body
+  margin: 0
+  padding: 0
+  font-family: freight-sans-pro, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-size: 18px
+  -webkit-font-smoothing: antialiased
+  color: var(--blue)
+
+.container
+  max-width: 700px
+  margin: 0 auto
+
+p
+  line-height: 1.5em
+
+  & a
+    color: var(--red)
+    font-weight: 600
+    text-decoration: none
+    border-bottom: 1px solid transparent
+    transition: all .25s ease
+
+    &:hover
+      border-bottom-color: var(--red)
+
+header
+  display: flex
+  flex-flow: column
+  justify-content: center
+  background: linear-gradient(to top, var(--sky-end), var(--sky-start))
+  position: relative
+  height: 60vw
+
+  & .text
+    align-self: center
+    margin: 50px 0
+    position: relative
+    z-index: 10
+
+  & h1
+    border: 0
+    font: 0/0 a
+    text-shadow: none
+    color: transparent
+    background: url('/img/spike-text.svg')
+    width: 155px
+    height: 64px
+
+  & h2
+    margin-top: 15px
+    text-transform: uppercase
+    font-weight: 100
+    font-size: 0.9em
+    color: var(--blue)
+    opacity: 0.8
+
+  & #backdrop
+    position: absolute
+    width: 100%
+    height: 60vw
+    overflow: hidden
+    background:
+      url('/img/sand.svg') center bottom / 100% no-repeat,
+      url('/img/mountains.svg') 50% 79% / 100% no-repeat,
+      url('/img/sun.svg') 50% 120% / 50% no-repeat
+
+    & > div
+      background: url('/img/cloud.svg') no-repeat
+      position: absolute
+
+    & .cloud1
+      background-size: 147px 66px
+      width: 147px
+      height: 66px
+      top: 21vw
+      left: 12vw
+      opacity: 0.4
+
+    & .cloud2
+      background-size: 78px 35px
+      width: 78px
+      height: 35px
+      top: 8vw
+      left: -2vw
+      opacity: 0.3
+
+    & .cloud3
+      background-size: 63px 28px
+      width: 63px
+      height: 28px
+      top: 4vw
+      left: 33vw
+      opacity: 0.3
+
+    & .cloud4
+      background-size: 78px 35px
+      width: 78px
+      height: 35px
+      top: 13vw
+      left: 65vw
+      opacity: 0.2
+
+    & .cloud5
+      background-size: 147px 66px
+      width: 147px
+      height: 67px
+      top: 25vw
+      left: 75vw
+      opacity: 0.2
+
+    & .cloud6
+      background-size: 147px 66px
+      width: 147px
+      height: 67px
+      top: 2vw
+      left: 92vw
+      opacity: 0.4
+
+  & .buttons
+    align-self: center
+    margin-bottom: 50px
+    position: relative
+    z-index: 10
+
+    & > a
+      background: var(--red)
+      color: white
+      font-weight: bold
+      padding: 11px 0
+      width: 120px
+      display: inline-block
+      text-align: center
+      border-radius: 5px
+      text-transform: uppercase
+      text-decoration: none
+      transition: background .25s ease
+
+      &:hover
+        background: color(var(--red) shade(10%))
+
+      &:first-child
+        margin-right: 40px
+
+  & .cactus
+    background: url('/img/cactus.svg')
+    width: 126px
+    height: 246px
+    background-size: 126px 246px
+    position: relative
+    z-index: 10
+    align-self: center
+
+nav
+  background: var(--blue)
+  display: flex
+  justify-content: center
+  padding: 25px 0
+
+  & a
+    margin-right: 25px
+    color: white
+    font-weight: 500
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 600
+    transition: opacity .25s ease
+
+    &:hover
+      opacity: .7

@@ -1,0 +1,34 @@
+{
+  "name": "spike-www",
+  "description": "spike&#39;s marketing site, made with spike",
+  "version": "0.0.1",
+  "author": "static-dev",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/static-dev/spike-www/issues",
+  "dependencies": {
+    "babel-preset-es2016": "^6.11.3",
+    "image-webpack-loader": "^2.0.0",
+    "spike-css-standards": "^0.1.0",
+    "spike-html-standards": "^0.3.0",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "rimraf": "^2.5.4",
+    "snazzy": "^4.0.1",
+    "spike-core": "^0.11.0",
+    "standard": "^7.1.2"
+  },
+  "homepage": "https://github.com/static-dev/spike-www",
+  "main": "app.js",
+  "private": "true",
+  "repository": "https://github.com/static-dev/spike-www",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
+  }
+}
