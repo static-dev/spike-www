@@ -1,6 +1,5 @@
 doctype html
 html
-
   head
     block(name='meta')
       meta(charset='utf-8')
@@ -20,7 +19,6 @@ html
 
   body(role='document')
     main(role='main')
-
       header
         #backdrop
           .cloud1
@@ -37,7 +35,6 @@ html
           a(href='https://spike.readme.io/docs') Docs
         .cactus
         .secret-tumbleweed
-
       nav
         a(href='#intro') Intro
         a(href='https://spike.readme.io/docs') Docs
