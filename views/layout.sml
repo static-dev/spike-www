@@ -39,15 +39,17 @@ html
         .secret-tumbleweed
 
       nav
-        a(href='#') Intro
-        a(href='#') Docs
-        a(href='#') Articles
-        a(href='#') Plugins
-        a(href='#') Support
-        a(href='#') FAQ
+        a(href='#intro') Intro
+        a(href='https://spike.readme.io/docs') Docs
+        a(href='https://medium.com/static-dev') Articles
+        a(href='https://plugins.spike.cf') Plugins
+        a(href='https://gitter.im/static-dev/spike') Support
+        a(href='#faq') FAQ
 
       .container
         block(name='content')
+
+      footer
 
     block(name='javascript')
       script(src='js/main.js' defer)
