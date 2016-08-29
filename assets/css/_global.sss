@@ -186,3 +186,35 @@ footer
   padding: 55px
   height: 36px
   background: var(--blue) url('/img/built-at.svg') center center no-repeat
+
+/* nothing to see here, move along */
+.secret-tumbleweed
+  width: 100px
+  height: 100px
+  background: url('/img/tumbly.svg') center center / 100px no-repeat
+  position: absolute
+  bottom: 120px
+  left: 0%
+  margin-left: -100px
+  z-index: 11
+  animation: 6s linear 42s bojangle
+
+@keyframes bojangle
+  0%
+    bottom: 120px
+    left: 0%
+    margin-left: -100px
+    transform: rotate(0deg)
+  20%
+    bottom: 70px
+  40%
+    bottom: 120px
+  60%
+    bottom: 70px
+  80%
+    bottom: 120px
+  100%
+    bottom: 70px
+    left: 100%
+    margin-left: 0
+    transform: rotate(360deg)
