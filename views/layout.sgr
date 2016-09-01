@@ -18,7 +18,7 @@ html
       link(rel='stylesheet' href='css/index.css')
 
   body(role='document')
-    main(role='main')
+    main(role='main' id='{{ id }}')
       header
         #backdrop
           .cloud1

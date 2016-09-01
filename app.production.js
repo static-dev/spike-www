@@ -20,14 +20,14 @@ module.exports = {
   },
   // adds html minification plugin
   reshape: (ctx) => {
-    return htmlStandards({
-      webpack: ctx,
-      locals: { foo: 'bar' },
-      minify: true
-    })
+    return htmlStandards({ webpack: ctx, minify: true })
   },
   // adds css minification plugin
   postcss: (ctx) => {
-    return cssStandards({ webpack: ctx, minify: true })
+    return cssStandards({
+      webpack: ctx,
+      minify: true,
+      warnForDuplicates: false
+    })
   }
 }

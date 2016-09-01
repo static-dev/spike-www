@@ -17,6 +17,9 @@ body
   max-width: 700px
   margin: 0 auto
 
+  @media (max-width: 760px)
+    margin: 0 30px
+
 p
   line-height: 1.5em
 
@@ -38,11 +41,20 @@ header
   position: relative
   height: 60vw
 
+  @media (min-width: 1200px)
+    height: 720px
+
+  @media (max-width: 670px)
+    height: 401px
+
   & .text
     align-self: center
     margin: 50px 0
     position: relative
     z-index: 10
+
+    @media (max-width: 950px)
+      margin: 20px 0
 
   & h1
     border: 0
@@ -70,6 +82,14 @@ header
       url('/img/sand.svg') center bottom / 100% no-repeat,
       url('/img/mountains.svg') 50% 79% / 100% no-repeat,
       url('/img/sun.svg') 50% 120% / 50% no-repeat
+
+    @media (min-width: 1200px)
+      height: 720px
+
+    @media (max-width: 670px)
+      height: 401px
+      background-size: initial
+      background-position: 50% 258px, 50% 190px, 50% 120px
 
     & > div
       background: url('/img/cloud.svg') no-repeat
@@ -129,6 +149,9 @@ header
     position: relative
     z-index: 10
 
+    @media (max-width: 950px)
+      margin-bottom: 30px
+
     & > a
       background: var(--red)
       color: white
@@ -142,20 +165,38 @@ header
       text-decoration: none
       transition: background .25s ease
 
+      @media (max-width: 700px)
+        font-size: 0.9em
+        padding: 9px 0
+        width: 110px
+
       &:hover
         background: color(var(--red) shade(10%))
 
       &:first-child
         margin-right: 40px
 
+        @media (max-width: 475px)
+          margin-right: 25px
+
   & .cactus
     background: url('/img/cactus.svg')
-    width: 126px
-    height: 246px
-    background-size: 126px 246px
+    width: 11.2vw
+    height: 21.7vw
+    background-size: 11.2vw 21.7vw
     position: relative
     z-index: 10
     align-self: center
+
+    @media (min-width: 1200px)
+      width: 134px
+      height: 260px
+      background-size: 134px 260px
+
+    @media (max-width: 670px)
+      width: 75px
+      height: 145px
+      background-size: 75px 145px
 
 nav
   background: var(--blue)
@@ -171,6 +212,17 @@ nav
     text-transform: uppercase
     font-weight: 600
     transition: opacity .25s ease
+
+    @media (max-width: 600px)
+      font-size: 0.9em
+      margin-right: 20px
+
+    @media (max-width: 485px)
+      font-size: 0.8em
+      margin-right: 15px
+
+    @media (max-width: 385px)
+      margin-right: 10px
 
     &:hover
       opacity: .7
@@ -193,28 +245,38 @@ footer
   height: 100px
   background: url('/img/tumbly.svg') center center / 100px no-repeat
   position: absolute
-  bottom: 120px
+  bottom: 17%
   left: 0%
   margin-left: -100px
   z-index: 11
   animation: 6s linear 42s bojangle
 
+  @media (max-width: 850px)
+    width: 90px
+    height: 90px
+    background-size: 90px
+
+  @media (max-width: 750px)
+    width: 70px
+    height: 70px
+    background-size: 70px
+
 @keyframes bojangle
   0%
-    bottom: 120px
+    bottom: 17%
     left: 0%
     margin-left: -100px
     transform: rotate(0deg)
   20%
-    bottom: 70px
+    bottom: 7%
   40%
-    bottom: 120px
+    bottom: 17%
   60%
-    bottom: 70px
+    bottom: 7%
   80%
-    bottom: 120px
+    bottom: 17%
   100%
-    bottom: 70px
+    bottom: 7%
     left: 100%
     margin-left: 0
     transform: rotate(360deg)

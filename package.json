@@ -10,8 +10,8 @@
   "dependencies": {
     "babel-preset-es2016": "^6.11.3",
     "image-webpack-loader": "^2.0.0",
-    "spike-css-standards": "^0.1.0",
-    "spike-html-standards": "^0.3.3",
+    "spike-css-standards": "^0.1.1",
+    "spike-html-standards": "^0.3.7",
     "webpack": "^1.13.1"
   },
   "devDependencies": {
