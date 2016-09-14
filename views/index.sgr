@@ -4,6 +4,7 @@ extends(src='layout.sgr')
       p(md) Spike is a next-generation static site generator. It is built on top of [webpack](https://webpack.github.io/), and a foundation of [html](http://reshape.ml/), [css](http://postcss.org/), and [js](http://babeljs.io/) parsers that accept plugins to transform the output. It’s fast, actively developed, and very data-friendly. Check out the quick introduction video below to get a feel for Spike!
 
       .video
+        p video tutorial coming soon
 
     #resources
       h3 Resources
@@ -42,7 +43,7 @@ extends(src='layout.sgr')
       p(md) Unfortunately we don't have the bandwidth to fix everyone's sites for free. However, we do have [a fantastic community](https://gitter.im/static-dev/spike) where someone might be able to help out. If you have found a bug, you are welcome to [file it as an issue](https://github.com/static-dev/spike/issues) as well.
 
       h4 Can I make spike work with sass, jade, stylus, or X other legacy tool?
-      p It's possible using [custom plugins and loaders](https://spike.readme.io/docs/plugins-loaders), but we strongly recommend against it. Spike is completely designed around and based on flexible, modern tooling that closely follows official specs for html, css, and js. We can only offer very limited support for using it with legacy tools and languages, and it is a step backward for your own projects. Spike's default tools might be a change from what you are used to, but it is the right decision for the future of your stack. And there is [a community](https://gitter.im/static-dev/spike) to help if you have any questions.
+      p(md) [It's possible](https://github.com/static-dev/spike-tpl-roots) using [custom plugins and loaders](https://spike.readme.io/docs/plugins-loaders), but we strongly recommend against it. Spike is completely designed around and based on flexible, modern tooling that closely follows official specs for html, css, and js. We can only offer very limited support for using it with legacy tools and languages, and it is a step backward for your own projects. Spike's default tools might be a change from what you are used to, but it is the right decision for the future of your stack. And there is [a community](https://gitter.im/static-dev/spike) to help if you have any questions.
 
       h4 Why is there a potted cactus in a desert on this website?
       p Because cacti love deserts, even if they are potted. Hey by the way, did you find the elusive tumbleweed?

@@ -5,6 +5,8 @@
   --sky-start: #D3F7FF
   --sky-end: #9CD7F9
 
+@custom-media --width-limit (min-width: 1200px)
+
 body
   margin: 0
   padding: 0
@@ -12,6 +14,13 @@ body
   font-size: 18px
   -webkit-font-smoothing: antialiased
   color: var(--blue)
+  background: #cbd8dd
+  margin: 0 auto
+  max-width: 1400px
+  box-shadow: 0 0 15px 3px rgba(79,83,84,.1)
+
+main
+  background: white
 
 .container
   max-width: 700px
@@ -40,8 +49,9 @@ header
   background: linear-gradient(to top, var(--sky-end), var(--sky-start))
   position: relative
   height: 60vw
+  overflow: hidden
 
-  @media (min-width: 1200px)
+  @media (--width-limit)
     height: 720px
 
   @media (max-width: 670px)
@@ -83,7 +93,7 @@ header
       url('/img/mountains.svg') 50% 79% / 100% no-repeat,
       url('/img/sun.svg') 50% 120% / 50% no-repeat
 
-    @media (min-width: 1200px)
+    @media (--width-limit)
       height: 720px
 
     @media (max-width: 670px)
@@ -103,6 +113,10 @@ header
       left: 12vw
       opacity: 0.4
 
+      @media (--width-limit)
+        top: 253px
+        left: 144px
+
     & .cloud2
       background-size: 78px 35px
       width: 78px
@@ -110,6 +124,10 @@ header
       top: 8vw
       left: -2vw
       opacity: 0.3
+
+      @media (--width-limit)
+        top: 85px
+        left: -17px
 
     & .cloud3
       background-size: 63px 28px
@@ -119,6 +137,10 @@ header
       left: 33vw
       opacity: 0.3
 
+      @media (--width-limit)
+        top: 48px
+        left: 396px
+
     & .cloud4
       background-size: 78px 35px
       width: 78px
@@ -126,6 +148,10 @@ header
       top: 13vw
       left: 65vw
       opacity: 0.2
+
+      @media (--width-limit)
+        top: 156px
+        left: 780px
 
     & .cloud5
       background-size: 147px 66px
@@ -135,6 +161,10 @@ header
       left: 75vw
       opacity: 0.2
 
+      @media (--width-limit)
+        top: 300px
+        left: 900px
+
     & .cloud6
       background-size: 147px 66px
       width: 147px
@@ -142,6 +172,10 @@ header
       top: 2vw
       left: 92vw
       opacity: 0.4
+
+      @media (--width-limit)
+        top: 24px
+        left: 1104px
 
   & .buttons
     align-self: center
@@ -188,7 +222,7 @@ header
     z-index: 10
     align-self: center
 
-    @media (min-width: 1200px)
+    @media (--width-limit)
       width: 134px
       height: 260px
       background-size: 134px 260px
