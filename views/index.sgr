@@ -29,7 +29,11 @@ extends(src='layout.sgr')
           .text
             h4 Community
             p Come on over to our gitter chatroom, where a community of Spike user can help out. Or just chat about how great life is.
-
+        li: a(href='https://spike.readme.io/docs/built-with-spike')
+          .icon.built-with-spike
+          .text
+            h4 Built with Spike
+            p If you've built an awesome site with Spike and want to show it off, this is the spot to do it.
     #faq
       h3 Frequently Asked Questions
 
