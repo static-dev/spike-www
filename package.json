@@ -20,7 +20,7 @@
     "snazzy": "^5.0.0",
     "spike": "^0.12.1",
     "spike-core": "^0.12.1",
-    "standard": "^8.1.0"
+    "standard": "^8.2.0"
   },
   "homepage": "https://github.com/static-dev/spike-www",
   "main": "app.js",
