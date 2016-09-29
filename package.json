@@ -8,7 +8,7 @@
   },
   "bugs": "https://github.com/static-dev/spike-www/issues",
   "dependencies": {
-    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-es2016": "^6.16.0",
     "image-webpack-loader": "^2.0.0",
     "spike-css-standards": "^0.1.1",
     "spike-html-standards": "^0.3.7",
