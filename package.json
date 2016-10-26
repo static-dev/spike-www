@@ -12,7 +12,7 @@
     "image-webpack-loader": "^3.0.0",
     "spike-css-standards": "^0.1.2",
     "spike-html-standards": "^0.3.7",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.3"
   },
   "devDependencies": {
     "ava": "^0.16.0",
