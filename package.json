@@ -15,7 +15,7 @@
     "webpack": "^1.13.3"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.17.0",
     "rimraf": "^2.5.4",
     "snazzy": "^5.0.0",
     "spike": "^0.12.1",
