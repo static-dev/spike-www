@@ -17,7 +17,7 @@
   "devDependencies": {
     "ava": "^0.17.0",
     "rimraf": "^2.5.4",
-    "snazzy": "^5.0.0",
+    "snazzy": "^6.0.0",
     "spike": "^0.14.1",
     "spike-core": "^0.13.1",
     "standard": "^8.6.0"
