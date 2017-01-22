@@ -1,5 +1,7 @@
 # spike-www
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/static-dev/spike-www.svg)](https://greenkeeper.io/)
+
 spike&#39;s marketing site, made with spike
 
 ## Setup
