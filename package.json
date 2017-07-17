@@ -1,26 +1,19 @@
 {
   "name": "spike-www",
-  "description": "spike&#39;s marketing site, made with spike",
+  "description": "spike's marketing site, made with spike",
   "version": "0.0.1",
-  "author": "static-dev",
-  "ava": {
-    "verbose": "true"
-  },
+  "author": "Jeff Escalante",
   "bugs": "https://github.com/static-dev/spike-www/issues",
   "dependencies": {
-    "babel-preset-es2016": "^6.22.0",
-    "image-webpack-loader": "^3.1.0",
-    "spike-css-standards": "^0.2.0",
-    "spike-html-standards": "^0.3.7",
-    "webpack": "^1.14.0"
+    "reshape-standard": "^2.0.0",
+    "spike": "^2.0.2",
+    "spike-css-standards": "^2.0.1",
+    "spike-js-standards": "^2.0.2",
+    "spike-optimize": "^0.1.1"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
-    "rimraf": "^2.5.4",
-    "snazzy": "^6.0.0",
-    "spike": "^0.14.2",
-    "spike-core": "^0.13.3",
-    "standard": "^8.6.0"
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
   },
   "homepage": "https://github.com/static-dev/spike-www",
   "main": "app.js",
@@ -28,8 +21,6 @@
   "repository": "https://github.com/static-dev/spike-www",
   "scripts": {
     "lint": "standard | snazzy",
-    "precommit": "npm run lint -s",
-    "pretest": "npm run lint -s",
-    "test": "NODE_ENV=test ava"
+    "precommit": "npm run lint -s"
   }
 }

@@ -1,19 +1,12 @@
-const htmlStandards = require('spike-html-standards')
+const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
-const es2016 = require('babel-preset-es2016')
+const jsStandards = require('spike-js-standards')
+const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  devtool: 'source-map',
-  matchers: {
-    html: '**/*.sgr',
-    css: '**/*.sss'
-  },
-  ignore: ['**/layout.sml', '**/_*', '**/.*'],
-  reshape: (ctx) => {
-    return htmlStandards({ webpack: ctx })
-  },
-  postcss: (ctx) => {
-    return cssStandards({ webpack: ctx })
-  },
-  babel: { presets: [es2016] }
+  matchers: { html: '**/*.sgr', css: '**/*.sss' },
+  ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
+  reshape: htmlStandards({ minify: isProduction }),
+  postcss: cssStandards({ minify: isProduction }),
+  babel: jsStandards()
 }
